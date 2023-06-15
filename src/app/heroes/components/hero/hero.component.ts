@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
-  selector: 'app-heroes-hero',
-  templateUrl: './hero.component.html',
-  styleUrls: ['./hero.component.css']
+    selector: 'app-heroes-hero',
+    templateUrl: './hero.component.html',
+    styleUrls: ['./hero.component.css']
 })
 export class HeroComponent {
     public name: string = 'ironman';
@@ -13,11 +13,17 @@ export class HeroComponent {
         return this.name.toUpperCase();
     }
 
-    getHeroDescription = (): string => { return `${ this.name } - ${this.age }`; };
+    getHeroDescription = (): string => {
+        return `${this.name} - ${this.age}`;
+    };
 
-    changeHero = ( hero: string ) => { this.name = hero; };
+    changeHero = (hero: string) => {
+        this.name = hero;
+    };
 
-    changeAge = ( age: number ) => { this.age = age; };
+    changeAge = (age: number) => {
+        this.age = age;
+    };
 
     resetForm = () => {
         this.name = 'ironman';

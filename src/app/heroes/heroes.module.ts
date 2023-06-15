@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { HeroComponent } from './components/hero/hero.component';
-import { ListComponent } from './components/list/list.component';
+import {HeroComponent} from './components/hero/hero.component';
+import {ListComponent} from './components/list/list.component';
 
 @NgModule({
     declarations: [
@@ -17,4 +17,5 @@ import { ListComponent } from './components/list/list.component';
         CommonModule
     ]
 })
-export class HeroesModule { }
+export class HeroesModule {
+}
